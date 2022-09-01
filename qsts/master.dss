@@ -208,7 +208,8 @@ Redirect IEEE123Regulators.dss
 
 ! SPOT LOADS -- REDIRECT INPUT STREAM TO LOAD DEFINITIONS FILE
 
-Redirect IEEE123Loads.dss
+Redirect IEEE123LoadShapes.dss
+Redirect IEEE123LoadsQsts.dss
 
 ! All devices in the test feeder are now defined.
 !
@@ -219,5 +220,4 @@ Redirect IEEE123Loads.dss
 
 Set VoltageBases = [4.16, 0.48, .303]    ! ARRAY OF VOLTAGES IN KV
 CalcVoltageBases  ! PERFORMS ZERO LOAD POWER FLOW TO ESTIMATE VOLTAGE BASES
-Solve
-Export Voltages
+Solve mode=yearly stepsize=15m number=35040

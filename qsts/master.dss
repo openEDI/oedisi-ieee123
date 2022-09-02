@@ -211,6 +211,10 @@ Redirect IEEE123Regulators.dss
 Redirect IEEE123LoadShapes.dss
 Redirect IEEE123LoadsQsts.dss
 
+Redirect IEEE123PvShapes.dss
+Redirect IEEE123Pv.dss
+
+
 ! All devices in the test feeder are now defined.
 !
 ! Many of the voltages are reported in per unit, so it is important to establish the base voltages at each bus so
@@ -220,4 +224,7 @@ Redirect IEEE123LoadsQsts.dss
 
 Set VoltageBases = [4.16, 0.48, .303]    ! ARRAY OF VOLTAGES IN KV
 CalcVoltageBases  ! PERFORMS ZERO LOAD POWER FLOW TO ESTIMATE VOLTAGE BASES
+
 Solve mode=yearly stepsize=15m number=35040
+Export Voltages
+

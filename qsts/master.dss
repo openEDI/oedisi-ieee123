@@ -225,6 +225,4 @@ Redirect IEEE123Pv.dss
 Set VoltageBases = [4.16, 0.48, .303]    ! ARRAY OF VOLTAGES IN KV
 CalcVoltageBases  ! PERFORMS ZERO LOAD POWER FLOW TO ESTIMATE VOLTAGE BASES
 
-Solve mode=yearly stepsize=15m number=35040
-Export Voltages
 

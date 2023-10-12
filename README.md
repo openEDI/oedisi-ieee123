@@ -1,4 +1,4 @@
-# gadal IEEE123 version
+# oedisi IEEE123 version
 
 Changes to default opendss solution:
 
@@ -7,7 +7,7 @@ Changes to default opendss solution:
 3. Create corresponding OEDI entry
 
 
-The data should be able to be run in a gadal feeder with state estimator and optimal power flow.
+The data should be able to be run in an oedisi feeder with state estimator and optimal power flow.
 
 # Directory structure and usage
 
